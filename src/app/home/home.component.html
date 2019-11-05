@@ -1,5 +1,5 @@
 <form action=""  [formGroup]='loginpass'>
     <input type="text" placeholder="Login" formControlName='login'>
     <input type="text" placeholder="Password" formControlName='password'>
-    <button  routerLink='/users'>LogIn</button>
+    <button  routerLink='/users' (click)='logIn()'>LogIn</button>
 </form>

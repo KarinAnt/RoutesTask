@@ -11,5 +11,7 @@ export class EditComponent implements OnInit {
 
   ngOnInit() {
   }
-
+  LogOut(){
+    localStorage.setItem('emptyloginorpass', "true");
+  }
 }

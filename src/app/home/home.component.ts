@@ -15,5 +15,13 @@ export class HomeComponent implements OnInit {
 
   ngOnInit() {
   }
-
+  logIn(){
+    if( (this.loginpass.value.login == "admin"&& this.loginpass.value.password == "admin") ||
+      (this.loginpass.value.login == "demo"&& this.loginpass.value.password == "demo")){
+        localStorage.setItem('login', this.loginpass.value.login);
+        localStorage.setItem('emptyloginorpass', "false");
+    }else{
+      localStorage.setItem('emptyloginorpass', "true");
+    }
+  }
 }

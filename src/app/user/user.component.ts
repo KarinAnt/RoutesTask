@@ -16,5 +16,7 @@ export class UserComponent implements OnInit {
   ngOnInit() {
 
   }
-
+  LogOut(){
+    localStorage.setItem('emptyloginorpass', "true");
+  }
 }

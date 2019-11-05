@@ -1,0 +1,10 @@
+<table border='2' cellspacing="0" cellpadding="10">
+    <tr *ngFor='let user of users; let id=index'>
+        <td>{{user.id}}</td>
+        <td>{{user.name}}</td>
+        <td>{{user.surname}}</td>
+        <td>{{user.city}}</td>
+        <td>{{user.img}}</td>
+        <td><a [routerLink]='[id]' >View</a></td>
+    </tr>
+</table>

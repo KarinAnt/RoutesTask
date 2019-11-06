@@ -10,8 +10,8 @@ import { EditGuard }   from './edit.guard';
 
 const routes: Routes = [
   { path: 'users', component: UsersComponent, canActivate:[UsersGuard] },
-  { path: 'users/:id', component: UserComponent },
-  { path: 'edit', component: EditComponent, canActivate:[EditGuard] },
+  { path: 'users/:id', component: UserComponent, canActivate:[UsersGuard] },
+  { path: 'users/:id/edit', component: EditComponent, canActivate:[EditGuard] },
   { path: '**', component: HomeComponent }
   
  ];

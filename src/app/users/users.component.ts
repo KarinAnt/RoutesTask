@@ -17,7 +17,4 @@ export class UsersComponent implements OnInit {
 
   ngOnInit() {
   }
-  LogOut(){
-    localStorage.setItem('emptyloginorpass', "true");
-  }
 }

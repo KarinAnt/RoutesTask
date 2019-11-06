@@ -3,5 +3,5 @@
 <p>user.surname</p>
 <p>user.city</p>
 <img src="user" alt="">
-<button  routerLink='/edit'>Edit</button>
-<button routerLink='/**' (click)='LogOut()'>LogOut</button>
+<button  [routerLink]="['/users', user.id, 'edit']">Edit</button>
+<app-log-out></app-log-out>

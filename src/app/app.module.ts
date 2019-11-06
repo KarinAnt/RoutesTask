@@ -12,6 +12,7 @@ import { HomeComponent } from './home/home.component';
 import { UsersGuard }   from './users.guard';
 import { UserComponent } from './user/user.component';
 import { EditGuard }   from './edit.guard';
+import { LogOutComponent } from './log-out/log-out.component';
 
 
 
@@ -21,7 +22,8 @@ import { EditGuard }   from './edit.guard';
     UsersComponent,
     EditComponent,
     HomeComponent,
-    UserComponent
+    UserComponent,
+    LogOutComponent
   ],
   imports: [
     BrowserModule,

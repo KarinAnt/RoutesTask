@@ -9,7 +9,7 @@ export class EditGuard implements CanActivate {
   canActivate(
     next: ActivatedRouteSnapshot,
     state: RouterStateSnapshot): Observable<boolean | UrlTree> | Promise<boolean | UrlTree> | boolean | UrlTree {
-      if(localStorage.getItem('login') =='admin'){
+      if(localStorage.getItem('login') =='admin' && localStorage.getItem('emptyloginorpass') =='false'){
         return true;
       }else{
         return false;
